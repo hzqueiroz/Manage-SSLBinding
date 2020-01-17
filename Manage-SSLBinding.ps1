@@ -2,6 +2,24 @@ function Get-SSLBinding {
     <#
         .SYNOPSIS
            Obtem os SSL Binding.
+
+            Hostname        : NOME DO SERVIDOR
+            Domain          : DOMINIO
+            Binding         : 0.0.0.0:443
+            Port            : 443
+            AppId           : 7b2468fc-8b3e-4e67-b7b8-9364bc719342
+            SslCertHash     : <Thumbprint>
+            FriendlyName    : *.exemplo.com.br
+            NotAfter        : 03/01/2022 18:15:03
+            Issuer          : CN=Go Daddy Secure Certificate Authority - G4, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, S=Arizona, C=US
+            Expiration_Date : 717
+            status          : Valido
+            Guid            : 4dc3e181-e14b-4a21-b022-59fc669b0914
+
+        .EXAMPLE
+
+        Get-SSLBinding
+
     #>
 
     function Get-IniContent ($filePath) {
